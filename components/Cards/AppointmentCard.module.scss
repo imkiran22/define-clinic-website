@@ -1,0 +1,38 @@
+.appointmentCard {
+  display: flex;
+  .ant-card-body {
+    align-items: end;
+    justify-content: center;
+    display: flex;
+  }
+
+  .card {
+    background: url('/appointment-girl.jpeg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: inline-flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: start;
+  }
+  .title {
+    a {
+      font-size: 28px;
+      text-transform: uppercase;
+      background: lavender;
+      color: black;
+      padding: 10px;
+      font-weight: bold;
+    }
+  }
+  .quote {
+    text-transform: capitalize;
+    font-family: cursive;
+    font-size: 21px;
+    color: #363636;
+    font-weight: bold;
+  }
+}
+

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Button, DatePicker, Space, version } from "antd";
-import App from '../components/App';
+import AppointmentCard from '../components/Cards/AppointmentCard';
 
 const Home: NextPage = () => {
   return (
@@ -15,14 +15,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-      <div className="App">
-        {/* <h1>antd version: {version}</h1>
-        <Space>
-          <DatePicker />
-          <Button type="primary">Primary Button</Button>
-        </Space> */}
-        <App />
-      </div>
+        <div className="App">
+          <AppointmentCard></AppointmentCard>
+        </div>
       </main>
     </div>
   )

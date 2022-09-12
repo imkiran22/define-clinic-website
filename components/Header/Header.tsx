@@ -2,17 +2,20 @@ import React from 'react';
 import HeaderStyle from './Header.module.scss';
 import { Layout, Menu } from 'antd';
 import { CaretDownOutlined } from '@ant-design/icons';
+import Link from 'next/link';
 import { HEADER_MENU_ITEMS, TREATMENTS_MENU } from '../../constants/menu';
 const { Header } = Layout;
 
 
 const HeaderComponent: React.FC = () => {
     const renderMenu = (menus: Array<{key: string, label: string}>) => (
-        menus.map(menu => (
-            <Menu.Item key={menu.key}>
-                {menu.label}
-            </Menu.Item>
-        ))
+      menus.map(menu => (
+          <Menu.Item>
+            <Link key={menu.key} href={'/' + menu.key}> 
+              {menu.label}
+            </Link>
+          </Menu.Item>
+      ))
     );
     return (
       <Header
