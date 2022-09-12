@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Button, DatePicker, Space, version } from "antd";
 import AppointmentCard from '../components/Cards/AppointmentCard';
+import Procedures from '../components/Procedures/Procedures';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className="App">
           <AppointmentCard></AppointmentCard>
+          <Procedures/>
         </div>
       </main>
     </div>

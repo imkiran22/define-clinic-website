@@ -1,7 +1,7 @@
 .appointmentCard {
   display: flex;
   .ant-card-body {
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     display: flex;
   }
@@ -15,16 +15,24 @@
     display: inline-flex;
     flex-basis: 100%;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
+    @media screen and (max-width: 769px) {
+      height: auto;
+      align-items: flex-start;
+    }
   }
   .title {
     a {
       font-size: 28px;
       text-transform: uppercase;
-      background: lavender;
+      background: #d5b8ff;
       color: black;
+      opacity: 0.8;
       padding: 10px;
       font-weight: bold;
+      @media screen and (max-width: 769px) {
+        font-size: 14px;
+      }
     }
   }
   .quote {
@@ -33,6 +41,10 @@
     font-size: 21px;
     color: #363636;
     font-weight: bold;
+    @media screen and (max-width: 769px) {
+      font-size: 12px;
+    }
   }
 }
+
 
