@@ -1,6 +1,4 @@
-const MENUS = ['home', 'gallery', 'book-appointment', 'about', 'contact-us'];
-
-export const TREATMENTS_MENU = [
+export const TREATMENTS_MENU: Array< {key: string, label: string } > = [
     {key: 'acne_marks', label: 'Acne Marks'}, 
     {key: 'scar_revisions', label: 'Scar Revision'},
     {key: 'pigmentation_treatment', label: 'Pigmentation Treatment'},
@@ -9,4 +7,4 @@ export const TREATMENTS_MENU = [
     {key: 'skin_lightening_treatment', label: 'Skin Lightening Treatment'}
 ];
 
-export const HEADER_MENU_ITEMS: Array< {key: string, label: string } > = MENUS.map(menu => ({key: menu, label: menu.toUpperCase()}));
+export const HEADER_MENU_ITEMS: Array< {key: string, label: string } > = [{key: 'home', label: 'Home'}, {key: 'gallery', label: 'Gallery'}, {key: 'book-appointment', label: 'Book Appointment'}, {key: 'about', label: 'About' }, {key: 'contact-us', label: 'Contact us'}];

@@ -26,7 +26,7 @@ export default function Layout({ children }: any) {
             textAlign: "center",
           }}
         >
-          Ant Design ©2018 Created by Ant UED
+          Define skin hair and laser clinic ©2022 All rights reserved
         </Footer>
       </L>
     </>
