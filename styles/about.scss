@@ -1,0 +1,80 @@
+.about {
+    padding: 20px;
+    background: #cdd1e4;
+    .title {
+      font-size: 24px;
+      font-weight: 900;
+      @media screen and (max-width: 769px) {
+        font-size: 22px;
+      }
+    }
+    .content {
+      display: flex;
+      flex-flow: row nowrap;
+      @media screen and (max-width: 769px) {
+        flex-flow: column wrap;
+      }
+      .photo {
+        flex: 1;
+        padding-right: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          border: 3px solid #342d71;
+          margin-top: 5px;
+        }
+        @media screen and (max-width: 769px) {
+          padding-bottom: 10px;
+        }
+      }
+      .description {
+        flex: 4;
+        font-size: 18px;
+        line-height: 30px;
+        @media screen and (max-width: 769px) {
+          font-size: 14px;
+          line-height: 1.5715;
+        }
+      }
+    }
+    .functioning {
+      margin-top: 30px;
+      display: flex;
+      flex-basis: 50%;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      @media screen and (max-width: 912px) {
+        flex-basis: 100%;
+      }
+      .functioningTitle {
+        @extend .title;
+        flex-basis: 50.1%;
+        padding-left: 1px;
+        @media screen and (max-width: 912px) {
+          flex-basis: 100%;
+          padding-left: 0px;
+        }
+      }
+      .functioningDays {
+        flex-basis: 50%;
+        @media screen and (max-width: 912px) {
+          flex-basis: 100%;
+        }
+        .wrapper {
+          display: flex;
+          justify-content: space-between;
+          font-size: 18px;
+          border-bottom: 1px solid grey;
+          line-height: 40px;
+          padding: 8px 0px;
+          @media screen and (max-width: 912px) {
+            flex-basis: 100%;
+            padding: 2px 0px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  

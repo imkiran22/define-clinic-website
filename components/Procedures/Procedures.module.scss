@@ -1,33 +1,41 @@
-.procedure {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
-  .card {
-    background: whitesmoke;
-    flex-basis: 25%;
-    .img {
-      width: 100%;
-    }
-    .subTitle {
-        font-size: 22px;
-        font-weight: bold;
-        margin-top: 10px;
-    }
-    .content {
-        font-size: 14px;
-    }
-    .knowMore {
-      display: flex;
-      justify-content: center;
-      margin-top: 5px;
-    }
-    &:hover {
-      transform: scale(1.2);
-      transition: transform linear 0.3s; 
-    }
-  }
+.wrapper {
+  background: #eeecf3;
+  padding-bottom: 25px;
   @media screen and (max-width: 769px) {
-    flex-flow: column;
+    padding-bottom: 0px;
+    background: none;
+  }
+  .procedure {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    .card {
+      background: whitesmoke;
+      flex-basis: 25%;
+      .img {
+        width: 100%;
+      }
+      .subTitle {
+          font-size: 22px;
+          font-weight: bold;
+          margin-top: 10px;
+      }
+      .content {
+          font-size: 14px;
+      }
+      .knowMore {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+      }
+      &:hover {
+        transform: scale(1.2);
+        transition: transform linear 0.3s; 
+      }
+    }
+    @media screen and (max-width: 769px) {
+      flex-flow: column;
+    }
   }
 }
 

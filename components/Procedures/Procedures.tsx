@@ -5,7 +5,7 @@ import { PROCEDURES_LIST } from '../../constants/procedures';
 import Styles from "./Procedures.module.scss";
 
 const Procedures = () => {
-  return <><h3 className={Styles.title}>Our Services</h3>
+  return <div className={Styles.wrapper}><h3 className={Styles.title}>Our Services</h3>
   <div className={Styles.procedure}>
   {
     PROCEDURES_LIST.map(proc => (
@@ -20,7 +20,7 @@ const Procedures = () => {
       ))
   }
   </div>
-  </>
+  </div>
 };
 
 export default Procedures;
