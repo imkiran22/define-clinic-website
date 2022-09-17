@@ -26,8 +26,8 @@ export default function Layout({ children }: any) {
           <div className="copyright">Define skin hair and laser clinic ©2022 All rights reserved </div>
           <div className="socialMedia">
             <span className="title">Follow us on</span> 
-            <a target={'_blank'} href={'https://www.instagram.com/define.skin.hair.clinic'}><FacebookFilled/></a>
-            <a target={'_blank'} href={'https://www.instagram.com/define.skin.hair.clinic'}><InstagramOutlined /></a>
+            <a target={'_blank'} rel="noreferrer"  href={'https://www.instagram.com/define.skin.hair.clinic'}><FacebookFilled/></a>
+            <a target={'_blank'} rel="noreferrer"  href={'https://www.instagram.com/define.skin.hair.clinic'}><InstagramOutlined /></a>
           </div>
         </Footer>
       </L>

@@ -1,12 +1,13 @@
 import React from "react";
 import { ABOUT_CONTENT, FUNCTIONING_DAYS, FUNCTIONING_TITLE, TITLE } from "../../constants/about";
+import Image from 'next/image'
 
 const About: React.FC = () => {
     return <div className='about'>
         <div className='title'>{TITLE}</div>
         <div className='content'>
             <div className="photo">
-                <img src="doctor-saranya.jpg" />
+                <Image alt="doctor photo" src="/doctor-saranya.jpg" width={'100%'} height={'110%'} layout='responsive' />
             </div>
             <div className='description'>{ABOUT_CONTENT}</div>
         </div>

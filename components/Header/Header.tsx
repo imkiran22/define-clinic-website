@@ -10,8 +10,8 @@ const { Header } = Layout;
 const HeaderComponent: React.FC = () => {
     const renderMenu = (menus: Array<{key: string, label: string}>) => (
       menus.map(menu => (
-          <Menu.Item>
-            <Link key={menu.key} href={'/' + menu.key}> 
+          <Menu.Item key={menu.key}>
+            <Link href={'/' + menu.key}> 
               {menu.label}
             </Link>
           </Menu.Item>
