@@ -6,10 +6,13 @@
   position: fixed;
   z-index: 1;
   width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
   padding: 0;
   .logo {
-    flex-basis: 64px;
+    cursor: pointer;
+    position: absolute;
+  }
+  ul {
+    position: absolute;
+    left: 75px;
   }
 }

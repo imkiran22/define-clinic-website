@@ -21,7 +21,7 @@ const HeaderComponent: React.FC = () => {
     return (
       <Header className={HeaderStyle.header}>
         <div className={HeaderStyle.logo}>
-          <Image alt={'logo'} src={'/logo.jpg'} width={'70%'} height={'64%'} layout="fixed"/>
+          <Link href={'/'}><Image alt={'logo'} src={'/logo.jpg'} width={'70%'} height={'64%'} layout="fixed"/></Link>
         </div>
         <Menu triggerSubMenuAction='click' theme="dark" mode="horizontal" defaultSelectedKeys={["home"]}>
           {renderMenu(HEADER_MENU_ITEMS)}

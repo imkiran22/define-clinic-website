@@ -1,5 +1,6 @@
 import { Card } from "antd";
 import React from "react";
+import Link from 'next/link';
 import AppointmentCardStyles from './AppointmentCard.module.scss' 
 
 const AppointmentCard: React.FC = () => (
@@ -7,7 +8,7 @@ const AppointmentCard: React.FC = () => (
     <Card className={AppointmentCardStyles.card}>
       <p className={AppointmentCardStyles.quote}>Filters are great, but great skin is better</p>
       <p className={AppointmentCardStyles.title}>
-        <a>Book an appointment</a>
+        <Link href={'/book-appointment'}>Book an appointment</Link>
       </p>
     </Card>
   </div>
