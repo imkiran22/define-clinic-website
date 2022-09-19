@@ -19,9 +19,7 @@ const HeaderComponent: React.FC = () => {
       ))
     );
     return (
-      <Header
-       className={HeaderStyle.header}
-      >
+      <Header className={HeaderStyle.header}>
         <div className={HeaderStyle.logo}>
           <Image alt={'logo'} src={'/logo.jpg'} width={'70%'} height={'64%'} layout="fixed"/>
         </div>
