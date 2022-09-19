@@ -23,7 +23,7 @@ const HeaderComponent: React.FC = () => {
         <div className={HeaderStyle.logo}>
           <Link href={'/'}><Image alt={'logo'} src={'/logo.jpg'} width={'70%'} height={'64%'} layout="fixed"/></Link>
         </div>
-        <Menu triggerSubMenuAction='click' theme="dark" mode="horizontal" defaultSelectedKeys={["home"]}>
+        <Menu triggerSubMenuAction='click' theme="dark" mode="horizontal" defaultSelectedKeys={["/"]}>
           {renderMenu(HEADER_MENU_ITEMS)}
           <Menu.SubMenu className={HeaderStyle.treatmentMenu} key="SubMenu" title="Treatments" icon={<CaretDownOutlined />}>
             {renderMenu(TREATMENTS_MENU)}

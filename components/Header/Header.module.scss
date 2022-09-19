@@ -7,9 +7,11 @@
   z-index: 1;
   width: 100%;
   padding: 0;
+  overflow: auto;
   .logo {
     cursor: pointer;
-    position: absolute;
+    position: fixed;
+    z-index: 2;
   }
   ul {
     position: absolute;
