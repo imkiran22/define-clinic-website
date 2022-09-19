@@ -1,5 +1,9 @@
 .appointmentCard {
   display: flex;
+  @media screen and (max-width: 769px) {
+    flex-basis: 250px;
+  }
+
   .ant-card-body {
     align-items: flex-end;
     justify-content: center;
@@ -18,7 +22,8 @@
     justify-content: flex-start;
     @media screen and (max-width: 769px) {
       height: auto;
-      align-items: flex-start;
+      align-items: flex-end;
+      justify-content: flex-start;
     }
   }
   .title {
@@ -42,7 +47,8 @@
     color: #363636;
     font-weight: bold;
     @media screen and (max-width: 769px) {
-      font-size: 12px;
+      font-size: 18px;
+      color: #ffffff;
     }
   }
 }

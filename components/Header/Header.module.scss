@@ -1,3 +1,15 @@
 .treatmentMenu {
   order: 0 !important;
 }
+
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  .logo {
+    flex-basis: 64px;
+  }
+}

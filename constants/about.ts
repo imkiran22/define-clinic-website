@@ -1,4 +1,4 @@
-export const ABOUT_CONTENT = `Define is a cosmetic skin clinic that was build from the scratch with a passion to provide the best aesthetic care in a more ethical way. 
+export const ABOUT_CONTENT = `Define skin hair & laser is a cosmetic skin clinic that was build from the scratch with a passion to provide the best aesthetic care in a more ethical way. 
 We started our clinic in this year 2022 opened in avadi. 
 We believe when knowledge and technology comes in right hands, we can bring the right results. 
 Your skin and hair talks so much about you, brings out your confidence to face the world. 

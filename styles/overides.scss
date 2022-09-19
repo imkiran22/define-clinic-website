@@ -1,3 +1,14 @@
 /* .ant-layout-header {
   background: white;
 } */
+
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background: #d5b8ff;
+}
+
+.ant-menu-item-active {
+  &:hover {
+    background: #d5b8ff !important;
+  }
+}
