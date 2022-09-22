@@ -2,19 +2,21 @@ import React from "react";
 import {
   PhoneOutlined, MailOutlined, WhatsAppOutlined, PushpinOutlined
 } from '@ant-design/icons';
-import { ADDRESS, MAP, MOBILE, EMAIL } from "../../constants/clinic-details";
+import { ADDRESS, MAP, MOBILE, EMAIL, CLINIC_NAME } from "../../constants/clinic-details";
 
 const BookAppointment: React.FC = () => {
   return <div className="bookAppointment">
     <div className="photo">
-      <div className="title">BOOK APPOINTMENT</div>
+      <div className="title"><span>BOOK APPOINTMENT</span></div>
     </div>
-    <div className="title">For Appointments</div>
+    <div className="sub-title">For Appointments</div>
     <div className="content">
       <div className="wrapper">
-        <div className="contact">Contact Us</div>
+        <div className="contact"><span>Contact Us</span></div>
         <div className="address">
-          <div><PushpinOutlined /><span>Address:</span></div>
+          <div><PushpinOutlined /><span>Address:</span>
+          </div>
+          <div className="name">{CLINIC_NAME}</div>
           <span>{ADDRESS}</span> 
         </div>
         <div className="phone">
