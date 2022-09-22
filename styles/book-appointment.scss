@@ -1,124 +1,149 @@
-$lavender: #d5b8ff;
-$border-bottom: 2px solid $lavender;
-$background-bg: #2C3A47;
+$grey: grey;
+$border-bottom: 1px solid $grey;
+$background-bg: #cdd1e4;
 
 .bookAppointment {
-  display: flex;
-  flex-flow: column;
-  color: white;
-  background: $background-bg;
-  .photo {
-    flex-basis: 200px;
-    background: url("/appointment.jpeg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 0% 75%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    @media screen and (max-width: 769px) {
-      flex-basis: 80px;
-      background-size: cover;
-    }
-    .title {
-      span {
-        background: $background-bg;
-        opacity: 1;
-        padding: 0px 5px;
-        border-bottom: $border-bottom;
-        font-size: 24px;
-        font-weight: 900;
-        letter-spacing: 2px;
-        @media screen and (max-width: 769px) {
-          font-size: 18px;
-          letter-spacing: 0px;
-        }
-      }
-    }
-  }
-  .sub-title {
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 20px;
-    flex-basis: 100%;
-    align-self: center;
-    text-transform: uppercase;
-    border-bottom: $border-bottom;
-    padding-top: 10px;
-    @media screen and (max-width: 769px) {
-      font-size: 18px;
-    }
-  }
-  .content {
     display: flex;
-    padding: 10px;
-    flex-basis: auto;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    @media screen and (max-width: 769px) {
-      flex-flow: column;
-    }
-    .wrapper {
-      flex: 2;
-      padding-right: 10px;
-      .contact {
-        font-size: 24px;
-        font-weight: bolder;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        padding-bottom: 2px;
+    flex-flow: column;
+    color: black;
+    background: $background-bg;
+
+    .photo {
+        flex-basis: 200px;
+        background: url("/appointment.jpeg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: 0% 75%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
         @media screen and (max-width: 769px) {
-          font-size: 18px;
-        }
-        span {
-          border-bottom: $border-bottom;
-        }
-      }
-      .phone,
-      .email,
-      .address {
-        font-size: 20px;
-        font-weight: bold;
-        padding-bottom: 3px;
-        border-bottom: $border-bottom;
-        margin-bottom: 25px;
-        @media screen and (max-width: 769px) {
-          font-size: 16px;
-        }
-      }
-      .address {
-        font-size: 20px;
-        font-weight: bold;
-        padding-top: 10px;
-        @media screen and (max-width: 769px) {
-          font-size: 16px;
-        }
-        .name, > span {
-          font-weight: normal;
-          font-size: 16px;
+            flex-basis: 80px;
+            background-size: cover;
         }
 
-        .name {
-          color: $lavender;
+        .title {
+            span {
+                background: #d5b8ff;
+                padding: 0px 5px;
+                border-bottom: 1px solid magenta;
+                font-size: 28px;
+                font-weight: 900;
+                letter-spacing: 2px;
+
+                @media screen and (max-width: 769px) {
+                    font-size: 18px;
+                    letter-spacing: 0px;
+                }
+            }
         }
-        
-        > div {
-          span {
-            padding-left: 2px;
-            font-weight: bold;
-          }
-        }
-      }
     }
-    .communication {
-      flex: 2;
-      @media screen and (max-width: 769px) {
-        width: 100%;
-        iframe {
-          height: 200px;
+
+    .sub-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 20px;
+        flex-basis: 100%;
+        align-self: center;
+        text-transform: uppercase;
+        border-bottom: $border-bottom;
+        padding-top: 10px;
+
+        @media screen and (max-width: 769px) {
+            font-size: 18px;
         }
-      }
     }
-  }
+
+    .content {
+        display: flex;
+        padding: 10px;
+        flex-basis: auto;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        @media screen and (max-width: 769px) {
+            flex-flow: column;
+        }
+
+        .wrapper {
+            flex: 2;
+            padding-right: 10px;
+
+            .contact {
+                font-size: 24px;
+                font-weight: bolder;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                padding-bottom: 2px;
+
+                @media screen and (max-width: 769px) {
+                    font-size: 18px;
+                }
+
+                span {
+                    border-bottom: $border-bottom;
+                }
+            }
+
+            .phone,
+            .email,
+            .address {
+                font-size: 20px;
+                font-weight: bold;
+                padding-bottom: 3px;
+                border-bottom: $border-bottom;
+                margin-bottom: 25px;
+
+                @media screen and (max-width: 769px) {
+                    font-size: 16px;
+                }
+
+                .value {
+                    padding-left: 2px;
+                }
+            }
+
+            .address {
+                font-size: 20px;
+                font-weight: bold;
+                padding-top: 10px;
+
+                @media screen and (max-width: 769px) {
+                    font-size: 16px;
+                }
+
+                .name,
+                >span {
+                    font-weight: normal;
+                    font-size: 16px;
+                    font-style: italic;
+                }
+
+                .name {
+                    color: black;
+                }
+
+                >div {
+                    span {
+                        padding-left: 2px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .communication {
+            flex: 2;
+
+            @media screen and (max-width: 769px) {
+                width: 100%;
+
+                iframe {
+                    height: 200px;
+                }
+            }
+        }
+    }
 }

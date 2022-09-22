@@ -12,6 +12,8 @@
     .content {
       display: flex;
       flex-flow: row nowrap;
+      font-style: italic;
+      font-variant: small-caps;
       @media screen and (max-width: 769px) {
         flex-flow: column nowrap;
       }
@@ -30,7 +32,7 @@
       }
       .description {
         flex: 4;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
         color: black;
         @media screen and (max-width: 769px) {
