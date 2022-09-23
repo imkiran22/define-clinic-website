@@ -1,11 +1,8 @@
 import React from 'react';
-import About from '../components/About/About';
-import AppointmentCard from '../components/Cards/AppointmentCard';
-import Procedures from '../components/Procedures/Procedures';
-import ContactUsPage from './contact-us';
+import HomeComponent from '../components/Home/Home';
 
 const HomePage = () => {
-  return <><AppointmentCard/><Procedures/><About/><ContactUsPage className='whitesmoke-bg'/></>
+  return <HomeComponent></HomeComponent>
 }
 
 export default HomePage;

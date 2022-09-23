@@ -1,10 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import { Button, DatePicker, Space, version } from "antd";
-import AppointmentCard from '../components/Cards/AppointmentCard';
-import Procedures from '../components/Procedures/Procedures';
-import About from '../components/About/About';
+import HomeComponent from '../components/Home/Home';
 
 const Home: NextPage = () => {
   return (
@@ -17,9 +13,7 @@ const Home: NextPage = () => {
 
       <main className={'main'}>
         <div className="App">
-          <AppointmentCard></AppointmentCard>
-          <Procedures/>
-          <About/>
+          <HomeComponent/>
         </div>
       </main>
     </div>
