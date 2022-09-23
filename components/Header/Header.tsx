@@ -4,7 +4,7 @@ import { Layout, Menu } from 'antd';
 import { CaretDownOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import Image from 'next/image';
-import { HEADER_MENU_ITEMS, TREATMENTS_MENU } from '../../constants/menu';
+import { HEADER_MENU_ITEMS } from '../../constants/menu';
 const { Header } = Layout;
 
 
@@ -25,9 +25,6 @@ const HeaderComponent: React.FC = () => {
         </div>
         <Menu triggerSubMenuAction='click' theme="dark" mode="horizontal" defaultSelectedKeys={["/"]}>
           {renderMenu(HEADER_MENU_ITEMS)}
-          <Menu.SubMenu className={HeaderStyle.treatmentMenu} key="SubMenu" title="Treatments" icon={<CaretDownOutlined />}>
-            {renderMenu(TREATMENTS_MENU)}
-          </Menu.SubMenu>
         </Menu>
         
       </Header>

@@ -1,3 +1,5 @@
+@import 'colors.scss';
+
 .wrapper {
   background: #eeecf3;
   padding-bottom: 25px;
@@ -10,7 +12,7 @@
     flex-flow: row;
     justify-content: space-evenly;
     .card {
-      background: whitesmoke;
+      background: $white-smoke;
       flex-basis: 25%;
       .img {
         width: 100%;
@@ -50,6 +52,7 @@
     text-transform: capitalize;
     @media screen and (max-width: 769px) {
       font-size: 18px;
+      padding: 5px 0px;
     }
 }
 

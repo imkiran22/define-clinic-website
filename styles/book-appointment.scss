@@ -1,11 +1,14 @@
-$grey: grey;
-$border-bottom: 1px solid $grey;
-$background-bg: #cdd1e4;
+@import 'colors.scss';
+
+$min-color: $hot-pink;
+$border-bottom: 2px solid $min-color;
+$background-bg: $mauve;
+$content-color: $black;
 
 .bookAppointment {
     display: flex;
     flex-flow: column;
-    color: black;
+    color: $content-color;
     background: $background-bg;
 
     .photo {
@@ -25,9 +28,10 @@ $background-bg: #cdd1e4;
 
         .title {
             span {
-                background: #d5b8ff;
+                background: $background-bg;
+                color: $black;
                 padding: 0px 5px;
-                border-bottom: 1px solid magenta;
+                border-bottom: 2px solid $min-color;
                 font-size: 28px;
                 font-weight: 900;
                 letter-spacing: 2px;
@@ -119,10 +123,6 @@ $background-bg: #cdd1e4;
                     font-weight: normal;
                     font-size: 16px;
                     font-style: italic;
-                }
-
-                .name {
-                    color: black;
                 }
 
                 >div {

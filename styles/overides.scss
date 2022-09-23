@@ -1,6 +1,4 @@
-/* .ant-layout-header {
-  background: white;
-} */
+@import 'colors.scss';
 
 
 .ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
@@ -10,5 +8,38 @@
 .ant-menu-item-active {
   &:hover {
     background: #d5b8ff !important;
+  }
+}
+
+.ant-layout-header {
+  background: $black;
+  .ant-menu-dark {
+    background: $black;
+    .ant-menu-item {
+      span {
+        a {
+          color: $hot-pink;
+        }
+      }
+    }
+  }
+}
+
+.ant-menu-submenu  {
+  .ant-menu-vertical {
+    background: $black;
+    .ant-menu-item {
+      span {
+        a {
+          color: $hot-pink;
+        }
+      }
+    }
+  }
+}
+
+.anticon-ellipsis {
+  svg {
+    color: $hot-pink;
   }
 }

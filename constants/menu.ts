@@ -7,4 +7,4 @@ export const TREATMENTS_MENU: Array< {key: string, label: string } > = [
     {key: 'skin_lightening_treatment', label: 'Skin Lightening Treatment'}
 ];
 
-export const HEADER_MENU_ITEMS: Array< {key: string, label: string } > = [{key: 'home', label: 'Home'}, {key: 'gallery', label: 'Gallery'}, {key: 'book-appointment', label: 'Book Appointment'}, {key: 'about', label: 'About' }/*, {key: 'contact-us', label: 'Contact us'}*/];
+export const HEADER_MENU_ITEMS: Array< {key: string, label: string } > = [{key: 'home', label: 'Home'}, {key: 'book-appointment', label: 'Book Appointment'}, {key: 'about', label: 'About' }, {key: 'contact-us', label: 'Contact us'}];
