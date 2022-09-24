@@ -1,9 +1,8 @@
 import React from "react";
 import {
-  PhoneOutlined,
-  MailOutlined,
+  PhoneTwoTone,
   WhatsAppOutlined,
-  PushpinOutlined,
+  MailOutlined
 } from "@ant-design/icons";
 import {
   ADDRESS,
@@ -12,24 +11,24 @@ import {
   EMAIL,
   CLINIC_NAME,
 } from "../../constants/clinic-details";
+import { CLINIC_ADDRESS, CONTACT_US } from "../../constants/appointment-contact";
 
 const Contact: React.FC = () => {
   return (
     <div className="content">
         <div className="wrapper">
           <div className="contact">
-            <span>Contact Us </span>
+            <span>{CONTACT_US}</span>
           </div>
           <div className="address">
             <div>
-              <PushpinOutlined />
-              <span>Address:</span>
+              <span>{CLINIC_ADDRESS}</span>
             </div>
             <div className="name">{CLINIC_NAME}</div>
             <span>{ADDRESS}</span>
           </div>
-          <div className="phone">
-            <PhoneOutlined /> <span className="value">{MOBILE}</span>
+          <div className="phone cell">
+            <PhoneTwoTone /> <span className="value">{MOBILE}</span>
           </div>
           <div className="phone whatsapp">
             <WhatsAppOutlined /> <span className="value">{MOBILE}</span>

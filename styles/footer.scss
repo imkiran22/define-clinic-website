@@ -1,9 +1,12 @@
+@import 'colors.scss';
 .footer {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   font-weight: bold;
   font-size: 14px;
+  position: sticky;
+  bottom: 0;
   @media screen and (max-width: 769px) {
     flex-flow: column wrap;
     font-size: 10px;
@@ -13,6 +16,7 @@
     line-height: 35px;
     white-space: nowrap;
     text-align: left;
+    color: $hot-pink;
   }
   .socialMedia {
     display: flex;
@@ -29,6 +33,12 @@
       a {
         align-self: center;
       }
+    }
+    .fb {
+      color: $fb-color;
+    }
+    .ig {
+      color: $ig-color;
     }
   }
 }

@@ -2,12 +2,12 @@
 
 
 .ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
-  background: #d5b8ff;
+  background: $mauve;
 }
 
 .ant-menu-item-active {
   &:hover {
-    background: #d5b8ff !important;
+    background: $mauve !important;
   }
 }
 
@@ -42,4 +42,8 @@
   svg {
     color: $hot-pink;
   }
+}
+
+.ant-layout-footer {
+  padding: 10px;
 }
