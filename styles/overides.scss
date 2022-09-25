@@ -1,7 +1,7 @@
-@import 'colors.scss';
+@import "colors.scss";
 
-
-.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
   background: $mauve;
 }
 
@@ -25,7 +25,7 @@
   }
 }
 
-.ant-menu-submenu  {
+.ant-menu-submenu {
   .ant-menu-vertical {
     background: $black;
     .ant-menu-item {
@@ -46,4 +46,16 @@
 
 .ant-layout-footer {
   padding: 10px;
+}
+
+.procedure-modal {
+  .ant-modal-header {
+    background: $hot-pink;
+    .ant-modal-title {
+      color: $white-smoke;
+    }
+  }
+  .ant-modal-close {
+    color: $white-smoke;
+  }
 }

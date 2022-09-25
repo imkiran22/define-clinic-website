@@ -1,11 +1,8 @@
 import React from "react";
-import Contact from "../Contact/Contact";
 import {
-  PhoneOutlined,
   WhatsAppOutlined,
-  PushpinOutlined,
-  PushpinTwoTone,
-  MailOutlined
+  MailOutlined,
+  PhoneTwoTone
 } from "@ant-design/icons";
 import {
   ADDRESS,
@@ -31,7 +28,7 @@ const BookAppointment: React.FC = () => {
             <span>{REACH_US}</span>
           </div>
           <div className="phone cell">
-            <PhoneOutlined /> <span className="value">{MOBILE}</span>
+            <PhoneTwoTone /> <span className="value">{MOBILE}</span>
           </div>
           <div className="phone whatsapp">
             <WhatsAppOutlined /> <span className="value">{MOBILE}</span>

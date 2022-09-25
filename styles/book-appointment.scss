@@ -55,9 +55,6 @@ $content-color: $black;
           }
         }
     }
-    .sub-title {
-      text-transform: none;
-    }
   }
 
   .photo {
@@ -96,12 +93,15 @@ $content-color: $black;
   .sub-title {
     font-size: 24px;
     font-weight: 900;
-    margin-bottom: 20px;
     flex-basis: 100%;
     align-self: center;
-    text-transform: uppercase;
     border-bottom: $border-bottom;
-    padding-top: 10px;
+    padding: 2px 5px;
+    margin: 10px 0px 20px 0px;
+    background: transparent;
+    color: $hot-pink;
+    border: 2px solid $hot-pink;
+    text-transform: uppercase;
 
     @media screen and (max-width: 769px) {
       font-size: 18px;
