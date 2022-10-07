@@ -13,47 +13,49 @@ $content-color: $black;
 
   &.book {
     .content {
-        .wrapper {
-          display: flex;
-          flex-flow: column;
-          align-items: center;
-          .contact {
-            text-transform: none;
+      .wrapper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .contact {
+          text-transform: none;
+          margin-bottom: 5px;
+          span {
+            border-bottom: none;
+          }
+        }
+        .address {
+          padding-top: 0;
+          div:first-child {
             margin-bottom: 5px;
-            span {
-                border-bottom: none;
-            }
-          }
-          .address {
-            padding-top: 0;
-            div:first-child {
-                margin-bottom: 5px;
-                font-size: 24px;
-                font-weight: bolder;
-                @media screen and (max-width: 769px) {
-                    font-size: 18px;
-                }
-            }
-          }
-          .email {
-            > div {
-              margin-bottom: 5px;
-              font-size: 24px;
-              font-weight: bolder;
-              @media screen and (max-width: 769px) {
-                font-size: 18px;
-              }
-            }
-          }
-          @media screen and (max-width: 769px) {
-            align-items: flex-start;
-          }
-          @media screen and (max-width: 769px) {
-            .phone, .email, .address {
-                margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: bolder;
+            @media screen and (max-width: 769px) {
+              font-size: 18px;
             }
           }
         }
+        .email {
+          > div {
+            margin-bottom: 5px;
+            font-size: 24px;
+            font-weight: bolder;
+            @media screen and (max-width: 769px) {
+              font-size: 18px;
+            }
+          }
+        }
+        @media screen and (max-width: 769px) {
+          align-items: flex-start;
+        }
+        @media screen and (max-width: 769px) {
+          .phone,
+          .email,
+          .address {
+            margin-bottom: 10px;
+          }
+        }
+      }
     }
   }
 
@@ -155,6 +157,10 @@ $content-color: $black;
 
         .value {
           padding-left: 2px;
+          &.email-val,
+          &.whatsapp-val {
+            padding-left: 6px;
+          }
         }
       }
 
@@ -166,13 +172,13 @@ $content-color: $black;
 
       .whatsapp {
         svg {
-            color: $wp-color;
+          color: $wp-color;
         }
       }
 
       .email {
         svg {
-            color: $navy-color;
+          color: $navy-color;
         }
       }
 

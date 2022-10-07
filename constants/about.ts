@@ -1,29 +1,27 @@
-export const ABOUT_CONTENT = `Define skin hair & laser clinic is a cosmetic clinic that was build from the scratch with a passion to provide the best aesthetic care in a more ethical way. 
-We started our clinic in this year 2022 opened in avadi. 
-We believe when knowledge and technology comes in right hands, we can bring the right results. 
-Your skin and hair talks so much about you, brings out your confidence to face the world. 
-But there is a lot of myth around skin and hair care, 
-lot of comparisons, lot of false affirmations, you look the best in your own skin. 
-We will help you look confident and happy in your own skin. 
-Good skin and hair happens from within, so just giving you a precription wouldn’t solve it, 
-its important to analyse, find the cause and treat it. 
-We are passionate, young and enthusiastic who believe in science, evidences and promising results. 
-Good skin and hair is science, doesn’t happen overnight, it takes time to learn it!`
+export const ABOUT_CONTENT = `Define skin hair & laser clinic is a cosmetic clinic which is commenced with a passion to provide the best aesthetic care. 
+We opened our clinic in avadi in the year 2022. 
+There is certainity when knowledge and technology gets in best hands the brighter results we can foresee. 
+A person's skin and hair will definitely speak the confidence in one self. 
+We are very passionate in bringing the most advanced and efficient aesthetic procedures to the common people at reasonable prices and we believe that everyone deserves to be beautiful. Taking a first step in visiting a doctor for skin and hair concerns itself is a biggest thing for a person and we believe that price of treatments and procedures should not stop them from pursuing their desire to have a healthy skin. Here at Define skin hair and laser clinic, we continuously strive hard for making every cosmetic procedure easily accessible and affordable for everyone.  `;
 
-export const TITLE = 'ABOUT';
+export const TITLE = "ABOUT";
 
-export const FUNCTIONING_TITLE = 'FUNCTIONING HOURS';
+export const FUNCTIONING_TITLE = "FUNCTIONING HOURS";
 
-export const FUNCTIONING_DAYS = [{
-  key: 'monday-friday',
-  label: 'Monday - Friday',
-  value: '11 AM - 8 PM'
-}, {
-    key: 'saturday',
-    label: 'Saturday',
-    value: '11 AM - 8 PM'
-},{
-  key: 'sunday',
-  label: 'Sunday',
-  value: 'Closed'
-}];
+export const FUNCTIONING_DAYS = [
+  {
+    key: "monday-friday",
+    label: "Monday - Friday",
+    value: "11 AM - 8 PM",
+  },
+  {
+    key: "saturday",
+    label: "Saturday",
+    value: "11 AM - 8 PM",
+  },
+  {
+    key: "sunday",
+    label: "Sunday",
+    value: "Closed",
+  },
+];
