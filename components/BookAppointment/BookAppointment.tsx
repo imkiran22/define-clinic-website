@@ -35,19 +35,19 @@ const BookAppointment: React.FC = () => {
             <span>{REACH_US}</span>
           </div>
           <div className="phone cell">
-            <a href={`tel:${MOBILE}`}>
+            <a href={`tel:${MOBILE}`} rel="noreferrer">
               <PhoneTwoTone /> <span className="value">{MOBILE}</span>
             </a>
           </div>
           <div className="phone whatsapp">
-            <a href={WHATSAPP_LINK} target="_blank">
+            <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer">
               <WhatsAppOutlined />
               <span className="value whatsapp-val">{MOBILE}</span>
             </a>
           </div>
           <div className="email">
             <div>{MAIL_US}</div>
-            <a href={`mailto:${EMAIL}`}>
+            <a href={`mailto:${EMAIL}`} rel="noreferrer">
               <MailOutlined />
               <span className="value email-val">{EMAIL}</span>
             </a>

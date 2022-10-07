@@ -32,18 +32,18 @@ const Contact: React.FC = () => {
           <span>{ADDRESS}</span>
         </div>
         <div className="phone cell">
-          <a href={`tel:${MOBILE}`} target="_blank">
+          <a href={`tel:${MOBILE}`} target="_blank" rel="noreferrer">
             <PhoneTwoTone /> <span className="value">{MOBILE}</span>
           </a>
         </div>
         <div className="phone whatsapp">
-          <a href={WHATSAPP_LINK} target="_blank">
+          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer">
             <WhatsAppOutlined />
             <span className="value whatsapp-val">{MOBILE}</span>
           </a>
         </div>
         <div className="email">
-          <a href={`mailto:${EMAIL}`} target="_blank">
+          <a href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
             <MailOutlined />
             <span className="value email-val">{EMAIL}</span>
           </a>
