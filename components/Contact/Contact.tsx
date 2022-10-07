@@ -1,21 +1,10 @@
 import React from "react";
-import {
-  PhoneTwoTone,
-  WhatsAppOutlined,
-  MailOutlined,
-} from "@ant-design/icons";
-import {
-  ADDRESS,
-  MAP,
-  MOBILE,
-  EMAIL,
-  CLINIC_NAME,
-} from "../../constants/clinic-details";
+import { ADDRESS, MAP, CLINIC_NAME } from "../../constants/clinic-details";
 import {
   CLINIC_ADDRESS,
   CONTACT_US,
-  WHATSAPP_LINK,
 } from "../../constants/appointment-contact";
+import ContactHelper from "../Helper/ContactHelper";
 
 const Contact: React.FC = () => {
   return (
@@ -31,23 +20,7 @@ const Contact: React.FC = () => {
           <div className="name">{CLINIC_NAME}</div>
           <span>{ADDRESS}</span>
         </div>
-        <div className="phone cell">
-          <a href={`tel:${MOBILE}`} target="_blank" rel="noreferrer">
-            <PhoneTwoTone /> <span className="value">{MOBILE}</span>
-          </a>
-        </div>
-        <div className="phone whatsapp">
-          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer">
-            <WhatsAppOutlined />
-            <span className="value whatsapp-val">{MOBILE}</span>
-          </a>
-        </div>
-        <div className="email">
-          <a href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
-            <MailOutlined />
-            <span className="value email-val">{EMAIL}</span>
-          </a>
-        </div>
+        <ContactHelper />
       </div>
       <div className="communication wrapper">
         <div className="map">

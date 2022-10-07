@@ -1,24 +1,12 @@
 import React from "react";
-import {
-  WhatsAppOutlined,
-  MailOutlined,
-  PhoneTwoTone,
-} from "@ant-design/icons";
-import {
-  ADDRESS,
-  MAP,
-  MOBILE,
-  EMAIL,
-  CLINIC_NAME,
-} from "../../constants/clinic-details";
+import { ADDRESS, CLINIC_NAME } from "../../constants/clinic-details";
 import {
   BOOK_APPOINTMENT,
   FOR_APPOINTMENTS,
-  MAIL_US,
   REACH_US,
   ADDRESS_US,
-  WHATSAPP_LINK,
 } from "../../constants/appointment-contact";
+import ContactHelper from "../Helper/ContactHelper";
 
 const BookAppointment: React.FC = () => {
   return (
@@ -34,24 +22,7 @@ const BookAppointment: React.FC = () => {
           <div className="contact">
             <span>{REACH_US}</span>
           </div>
-          <div className="phone cell">
-            <a href={`tel:${MOBILE}`} rel="noreferrer">
-              <PhoneTwoTone /> <span className="value">{MOBILE}</span>
-            </a>
-          </div>
-          <div className="phone whatsapp">
-            <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer">
-              <WhatsAppOutlined />
-              <span className="value whatsapp-val">{MOBILE}</span>
-            </a>
-          </div>
-          <div className="email">
-            <div>{MAIL_US}</div>
-            <a href={`mailto:${EMAIL}`} rel="noreferrer">
-              <MailOutlined />
-              <span className="value email-val">{EMAIL}</span>
-            </a>
-          </div>
+          <ContactHelper displayMailTitle={true} />
           <div className="address">
             <div>{ADDRESS_US}</div>
             <div className="name">{CLINIC_NAME}</div>
