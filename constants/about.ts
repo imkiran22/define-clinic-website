@@ -12,12 +12,12 @@ export const FUNCTIONING_DAYS = [
   {
     key: "monday-friday",
     label: "Monday - Friday",
-    value: "11 AM - 8 PM",
+    value: "10 AM - 7 PM",
   },
   {
     key: "saturday",
     label: "Saturday",
-    value: "11 AM - 8 PM",
+    value: "10 AM - 7 PM",
   },
   {
     key: "sunday",
